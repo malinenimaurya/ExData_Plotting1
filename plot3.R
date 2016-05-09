@@ -5,7 +5,6 @@ globalActivePower <- as.numeric(samp$Global_active_power)
 subMetering1 <- as.numeric(samp$Sub_metering_1)
 subMetering2 <- as.numeric(samp$Sub_metering_2)
 subMetering3 <- as.numeric(samp$Sub_metering_3)
-
   png("plot3.png", width=480, height=480)
 plot(datetime, subMetering1, type="l", ylab="Energy Submetering", xlab="")
 lines(datetime, subMetering2, type="l", col="red")
